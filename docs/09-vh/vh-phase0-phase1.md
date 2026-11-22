@@ -89,3 +89,10 @@ This list is a design hypothesis, not a final schema. In particular, tariff conf
 - Read the repository's new-module prompt, Assignment 9 guide, spec-test prompt guide, student guide, platform structure, RBAC model, ADR-0013, and representative Placement registry/state-machine/model/API/frontend registration files.
 - The fork branch `module/vh` exists and is based on commit `5595be6628b4cdc6f8b47cf74bac267a2470f780`, matching upstream `main` at the time checked.
 - Local clone/build/test execution remains unavailable in this session because the container could not resolve `github.com`. No test, migration, lint, frontend build, browser, or deployment gate is claimed as run.
+
+
+## 8. Traceability workbook audit
+
+The workbook is structurally present and contains the expected Summary, CFR_Summary, AFR_RTM, UC_Index, BR_Index and WF_Transition_Index sheets. However, the mapping columns in the CFR_Summary, AFR_RTM and WF_Transition_Index rows inspected are blank (for example CFR mapped UC/BR/WF columns; AFR mapped UC, exact UC location, BR, WF and coverage columns; WF related CFR/key AFR columns). The UC index's Related CFRs/AFRs column is also blank. Therefore the workbook is not a populated source of cross-layer traceability; mapping must be derived from the actual UC/BR/WF specifications and recorded in the implementation traceability matrix. Do not claim matrix coverage from its existence alone.
+
+The active UC count is 23 non-retired entries, of which 3 are provisional/needs clarification (UC-VH-011, UC-VH-019, UC-VH-022) and 20 are currently implementable without resolving those provisional actors. UC-VH-010 and UC-VH-016 are retired.
